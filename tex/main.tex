@@ -1,4 +1,11 @@
-\documentclass[11pt]{article}
+\documentclass[12pt]{article}
+
+% Packages
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{hyperref}
+
+\usepackage[margin=1in]{geometry}
 
 % Translations
 
@@ -8,8 +15,179 @@
     \newcommand{\text}[2]{#1}
 \fi
 
+\graphicspath{{./graphics/}}
+
+\pagenumbering{gobble}
+\usepackage[utf8]{inputenc}
+
 \begin{document}
 
-    \text{English}{Svenska}
+\begin{figure*}
+    \begin{subfigure}[]{0.4\textwidth}
+        \includegraphics[height=5cm]{photo}
+    \end{subfigure}%
+    ~
+    \begin{subfigure}[]{0.5\textwidth}
+        \part*{Joel Oskarsson}
+
+        \begin{tabular}{l l}
+            Alsättersgatan 32 & \text{+46706724739}{0706724739}\\
+            584 32 Linköping & \href{mailto:joel.oskarsson@outlook.com}{joel.oskarsson@outlook.com}\\
+            \href{http://joelnir.github.io}{joelnir.github.io} & \href{http://linkedin.com/in/joel-oskarsson}{linkedin.com/in/joel-oskarsson}
+        \end{tabular}
+
+     \end{subfigure}%
+\end{figure*}
+
+\section*{\text{Education}{Utbildning}}
+\begin{itemize}
+    \item \text{
+            In progress: \textbf{Exchange Year, ETH Zürich}, Zürich, Switzerland\\
+        }{
+            Pågående: \textbf{Utbytesår, ETH Zürich}, Zürich, Schweiz\\
+        }
+        Sep 2018 -- Aug 2019\\
+        \text{
+            First year of my master as an exchange student at ETH. Courses mainly in AI and machine learning.
+        }{
+            Första året av masterstudier vid ETH. Kurser främst inom AI och maskininlärning.
+        }
+
+    \item \text{
+            In progress: \textbf{Master programme in Computer Science and Engineering (Swedish Civilingenjörsprogram), Linköping University}, Linköping, 300 ECTS\\
+        }{
+            Pågående: \textbf{Civilingenjörsprogram i Datateknik, Linköpings Universitet}, Linköping, 300HP\\
+        }
+        Aug 2015 -- 2020\\
+        \text{
+            Courses in mathematics, software development and hardware. Mean grade of 4.95.
+        }{
+            Kurser inom matematik, mjukvaruutveckling och hårdvara. Medelbetyg 4.95.
+        }
+        \begin{itemize}
+            \item \text{
+                    Bachelor thesis: \href{http://urn.kb.se/resolve?urn=urn:nbn:se:liu:diva-149042}{Real-time Multiplayer Game on IoT-backend}
+                }{
+                    Kandidatrapport: \href{http://urn.kb.se/resolve?urn=urn:nbn:se:liu:diva-149042}{Realtidsmultiplayerspel på IoT-backend}
+                }
+        \end{itemize}
+
+    \item \text{
+            \textbf{Technology Program, Lindeskolan}, Upper secondary school, Lindesberg\\
+        }{
+            \textbf{Teknikprogrammet, Lindeskolan}, Gymnasium, Lindesberg\\
+        }
+        Aug 2012 -- Jun 2015\\
+        \text{
+            Courses in web development and network technologies.
+        }{
+            Kurser inom webutveckling och nätverksteknik.
+        }
+
+\end{itemize}
+
+\section*{\text{Previous Work}{Tidigare Arbete}}
+\begin{itemize}
+    \item \textbf{Summer Intern, Ericsson}, Linköping\\
+        Jun-Aug 2018\\
+        \text{
+            Summer internship at Ericsson Research. Worked with GNSS positioning.
+        }{
+            Sommarjobb vid Ericsson Research. Arbetade med GNSS-positionering.
+        }
+
+    \item \textbf{\text{Course Assistant, Linköping University}{Kursassistent, Linköpings Universitet}}, Linköping\\
+        \text{Multiple periods}{Flera perioder} 2016-2018\\
+        \text{
+            In charge of lessons and seminars for courses in mathematics and computer science. Developed my leadership skills and personal responsibility.
+        }{
+            Hållit i lektioner och seminarier för kurser i matematik och datavetenskap. Har utvecklat mitt ledarskap och personliga ansvarstagande.
+        }
+
+    \item \textbf{\text{Store Clerk}{Butikspersonal}, Hemköp}, Lindesberg\\
+        \text{Summers}{Somrar} 2011-2016\\
+        \text{
+            Extra job. Worked under a lot of individual responsibility.
+        }{
+            Extrajobb. Arbetade under mycket eget ansvar.
+        }
+
+\end{itemize}
+
+\section*{\text{Experiences}{Erfarenheter}}
+\begin{itemize}
+    \item \text{
+            Developed multiple \textbf{hobby projects} such as smaller programs and video games. Some of these, as well as some university assignments, can be found on my \href{http://github.com/joelnir}{GitHub}.
+        }{
+            Utvecklat många \textbf{hobbyprojekt}, så som mindre program och spel. Vissa av dessa, samt en del uppgifter från universitetskurser, hittas på min \href{http://github.com/joelnir}{GitHub}.
+        }
+
+    \item \text{
+            Experience with \textbf{competitive programming}. I have competed in the IMPA competition with good results and also taken part in the Nordic Collegiate Programming Contest. This has given me good training in algorithm construction and testing.
+        }{
+            Hållit på med tävlingsprogrammering. Deltagit i tävlingen IMPA med goda resultat, samt programmerings-SM. Givit bra erfarenheter av algoritmkonstruktion och testning.
+        }
+
+    \item \text{
+            Plenty of experience \textbf{working in groups}. Good team player with experience and knowledge of different methodologies for software development.
+        }{
+            Stor vana av \textbf{arbete i grupp}. Erfarenhet och kunskap om olika metoder för att driva projekt, speciellt inom mjukvaruutveckling.
+        }
+
+    \item \text{
+            \textbf{Board member} (IT Manager) of student association FR Ryd 2017-2018. Working with many different people and under a lot of responsibility.
+        }{
+            \textbf{Styrelseledamot} (IT-ansvarig) för studentföreningen FR Ryd 2017-2018. Arbetat tillsammans med många olika människor under mycket ansvar.
+        }
+
+    \item \text{
+            Organized multiple \textbf{LAN-parties}, both as a member of a team and in a leading role. Part of the organizing team for D-LAN 2017 (around 200 visitors). Resulted in improved people skills and teamwork.
+        }{
+            Arrangerat flera \textbf{LAN-event}, både som del i ett team och i en ledande roll. Var med och arrangerade D-LAN 2017 (ca. 200 besökare). Givande erfarenheter för att arbeta med många människor och i grupp.
+        }
+
+\end{itemize}
+
+\section*{\text{Specific Knowledge}{Kunskap}}
+\begin{itemize}
+    \item \text{Programming Languages and Frameworks}{Programmeringsspråk och Ramverk}
+        \begin{description}
+            \item [\text{Knowledgeable in}{Goda kunskaper}] C++, Java, Python \text{and}{och} Web.
+            \item [\text{Experience with}{Erfarenhet av}] React, Unity, Travis CI, MATLAB, CoffeeScript, PHP, SQL, C, Assembler \text{and}{och} VHDL.
+        \end{description}
+
+    \item \text{
+            Speak both Swedish and English fluently and communicate well in both languages. Basic understanding of German.
+        }{
+            Pratar både svenska och engelska flytande och kan kommunicera väl på båda språken. Grundläggande förståelse av Tyska.
+        }
+
+    \item \text{
+            Accustomed to working on both Linux and Windows environments.
+        }{
+            Stor vana av att arbeta i både Linux- och Windows-miljöer.
+        }
+
+    \item \text{
+            Swedish driver license
+        }{
+            Svenskt B-körkort
+        }
+
+    \item \text{
+            Studied a course in equal treatment and gender-studies at Linköping University.
+        }{
+            Läst en kurs i likabehandling och genus vid Linköpings Universitet.
+        }
+
+\end{itemize}
+\vfill
+
+% Footer of page 2
+\center
+\begin{tabular}{l l}
+    Joel Oskarsson & \href{http://joelnir.github.io}{joelnir.github.io}\\
+    \href{mailto:joel.oskarsson@outlook.com}{joel.oskarsson@outlook.com} & \text{+46706724739}{0706724739}
+\end{tabular}
 
 \end{document}
