@@ -3,6 +3,9 @@ RM := rm
 SRC := ./tex/main.tex
 TEX := main.pdf
 
+# Use "make -B EMAIL=*other email address*" to change email
+EMAIL := joel.oskarsson@outlook.com
+
 FINAL_DIR := ./docs
 BUILD_DIR := ./build
 
@@ -22,12 +25,12 @@ swedish: $(SWE_PDF)
 
 $(ENG_PDF): $(SRC)
 	mkdir -p build
-	pdflatex $(FLAGS) "\def\english{}\input{$(SRC)}"
+	pdflatex $(FLAGS) "\def\english{}\def\email{$(EMAIL)}\input{$(SRC)}"
 	mv $(BUILD_DIR)/$(TEX) $(ENG_PDF)
 
 $(SWE_PDF): $(SRC)
 	mkdir -p build
-	pdflatex $(FLAGS) "\def\swedish{}\input{$(SRC)}"
+	pdflatex $(FLAGS) "\def\swedish{}\def\email{$(EMAIL)}\input{$(SRC)}"
 	mv $(BUILD_DIR)/$(TEX) $(SWE_PDF)
 
 .PHONY: clean
