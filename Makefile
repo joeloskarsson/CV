@@ -4,7 +4,7 @@ SRC := ./tex/main.tex
 TEX := main.pdf
 
 # Use "make -B EMAIL=*other email address*" to change email
-EMAIL := joel.oskarsson@outlook.com
+EMAIL := joel.oskarsson@liu.se
 
 FINAL_DIR := ./docs
 BUILD_DIR := ./build
