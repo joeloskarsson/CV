@@ -2,6 +2,7 @@ RM := rm
 
 SRC := ./tex/main.tex
 SRC_AC  := ./tex/academic.tex
+SRC_AC_SECTIONS := ./tex/sections/*
 PUB_LIST  := ./tex/publications.bib
 TEX := main.pdf
 
@@ -37,7 +38,7 @@ $(SWE_PDF): $(SRC)
 	pdflatex $(FLAGS) "\def\swedish{}\def\email{$(EMAIL)}\input{$(SRC)}"
 	mv $(BUILD_DIR)/$(TEX) $(SWE_PDF)
 
-$(AC_PDF): $(SRC_AC) $(PUB_LIST)
+$(AC_PDF): $(SRC_AC) $(SRC_AC_SECTIONS) $(PUB_LIST)
 	mkdir -p build
 	latexmk -pdf -jobname=$(BUILD_DIR)/main $(SRC_AC)
 	mv $(BUILD_DIR)/$(TEX) $(AC_PDF)
