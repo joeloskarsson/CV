@@ -1,10 +1,30 @@
 \section*{Participation in Scientific Events}
-\newcommand{\event}[4]{\item [#2] \textit{#1}\\ {\footnotesize#3}\\#4}
-\begin{labeling}{2023-06-22}
+%\newcommand{\event}[4]{\item [#2] \textit{#1}\\ {\footnotesize#3}\\#4}
+\newcommand{\event}[4]{%
+    \item [#2] \textit{#1}\\%
+        {\footnotesize#3}%
+        \ifx&#4&
+        % % No final line break if #4 is empty
+        \else%
+        \\#4%
+    \fi%
+}
+
+\begin{labeling}{2023--}
     \event{ELLIIT Focus Period Symposium: Machine Learning for Climate Science}{2024}{Linköping, Sweden}{Poster presentation}
     \event{Large-Scale Deep Learning for the Earth System Workshop}{2024}{Bonn, Germany}{Oral presentation}
     \event{International Conference on Machine Learning (ICML)\\Machine Learning for Earth System Modeling Workshop at ICML 2024}{2024}{Vienna, Austria}{Workshop poster presentation}
     \event{ESA-ECMWF workshop on Machine Learning for Earth System Observation and Prediction}{2024}{Frascati, Italy}{Oral presentation + poster presentation}
+    \event{ELLIIT Annual Workshop}{2024}{Lund, Sweden}{Poster presentation}
+    \event{WASP Winter Conference}{2024}{Norrköping, Sweden}{Poster presentation}
+    \event{Conference on Neural Information Processing Systems (NeurIPS)\\Tackling Climate Change with Machine Learning Workshop at NeurIPS 2023}{2023}{Online attendance}{Workshop poster presentation}
     \event{Large-Scale Deep Learning for the Earth System Workshop}{2023}{Bonn, Germany}{Oral presentation}
     \event{Nordic Conference in Mathematical Statistics (NORDSTAT)}{2023}{Gothenburg, Sweden}{Oral presentation}
+    \event{International Conference on Artificial Intelligence and Statistics (AISTATS)}{2023}{Valencia, Spain}{Poster presentation}
+    \event{Swedish Symposium on Image Analysis and Deep Learning}{2023}{Norrköping, Sweden}{Poster presentation}
+    \event{WASP Winter Conference}{2023}{Norrköping, Sweden}{Poster presentation}
+    \event{AI Day Finland}{2022}{Helsinki, Finland}{}
+    \event{Learning on Graphs Conference (LoG)}{2022}{Online attendance}{}
+    \event{International Conference on Machine Learning (ICML)\\Continuous Time Methods for Machine Learning Workshop at ICML 2022}{2022}{Baltimore, U.S.}{Poster presentation + Workshop poster presentation (\textit{Cancelled due to illness})}
+    \event{Nordic Probabilistic AI Summer School}{2022}{Helsinki, Finland}{Poster presentation}
 \end{labeling}

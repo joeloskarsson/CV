@@ -7,6 +7,7 @@
 \usepackage{enumitem}
 \usepackage{scrextend}
 \usepackage{titlesec}
+\usepackage{siunitx}
 
 \usepackage[margin=1in]{geometry}
 
@@ -28,8 +29,6 @@
 \titleformat{\subsection}
   {\normalfont\normalsize\itshape}{\thesubsection}{1em}{}
 
-
-
 \newcommand{\inputsection}[1]{\input{tex/sections/#1}}
 
 \graphicspath{{./graphics/}}
@@ -43,44 +42,15 @@
 \inputsection{research_interests}
 \inputsection{education}
 \inputsection{employment}
+\inputsection{publications}
+\inputsection{research_visits}
 \inputsection{presentations}
 \inputsection{reviewing}
 \inputsection{event_participation}
-
-\section*{Other activities}
-\begin{itemize}
-    \item Regularly act as reviewer for established machine learning conferences and associated workshops. Including:
-        AISTATS,
-        ICLR,
-        NeurIPS.
-    \item Organizer of the \href{https://github.com/STIMALiU/ml-reading-group}{STIMA Machine Learning Reading Group} at Linköping University (2022--)
-    \item Research visits, long and short (UCL, ECMWF, ETH/Meteoswiss, WASP finland trip?)
-    \item Regular attendance at international conferences and workshops within machine learning.
-    \item Media coverage https://www.svt.se/nyheter/lokalt/ost/de-vill-gora-vaderprognoser-mer-palitliga-med-hjalp-av-ai
-    \item Creator and maintainer of the \href{https://github.com/mllam/neural-lam}{Neural-LAM} open source python library for machine learning weather forecsating models.
-    \item ML-LAM online meetups
-\end{itemize}
-
-\section*{Specific Skills and Knowledge}
-\begin{itemize}
-    \item Extensive knowledge of models and algorithms for modern \textbf{machine learning and AI} applications. Specific expertise in:
-    \begin{itemize}
-        \item Graph neural networks
-        \item Bayesian models and inference methods
-        \item Probabilistic deep learning
-    \end{itemize}
-
-\item Sound knowledge of good \textbf{software engineering} practices, acquired from courses and projects throughout my undergraduate studies.
-        % I apply these practices to my research projects, creating accessible code.
-        % To emphasize transparency and reproducability in research I have made a habit to release research code publicly (see \href{my github page}{https://github.com/joeloskarsson}).
-
-    \item Programming languages and frameworks
-    \begin{description}
-        \item [Knowledgeable in] Python, PyTorch, PyTorch Geometric and SciPy/NumPy.
-        \item [Experience with] R, Tensorflow, scikit-learn, Java, MATLAB and C++.
-    \end{description}
-
-\item Highly accustomed to working in \textbf{Linux} environments.
-\end{itemize}
+\inputsection{activities}
+\inputsection{media}
+\inputsection{career_grants}
+\inputsection{skills}
+%\inputsection{references}
 
 \end{document}
