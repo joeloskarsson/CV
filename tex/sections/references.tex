@@ -1,1 +1,17 @@
 \section*{References}
+\newcommand{\reference}[5]{%
+\item \textit{#1}
+    \begin{labeling}{Webpage:}
+        \item[Position:] #2
+        \item[Relation:] #3
+        \item[Webpage:] \url{#4}
+        \item[E-mail:] \texttt{#5}
+    \end{labeling}
+}
+
+\begin{itemize}
+    \reference{Prof. Fredrik Lindsten}{Senior Associate Professor at Linköping University, Sweden}{Main supervisor of my PhD}{https://lindsten.netlify.app/}{fredrik.lindsten@liu.se}
+    \reference{Prof. Marc Deisenroth}{Google DeepMind Chair of Machine Learning and Artificial Intelligence at University College London, U.K.}{Collaborator}{https://www.deisenroth.cc/}{m.deisenroth@ucl.ac.uk}
+    \reference{Dr. Tomas Landelius}{Researcher at the Swedish Meteorological and Hydrological Institute}{Co-supervisor of my PhD}{https://www.smhi.se/en/research/research-departments/meteorology/tomas-landelius-1.4817}{tomas.landelius@smhi.se}
+\end{itemize}
+
