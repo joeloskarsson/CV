@@ -1,16 +1,18 @@
 \section*{Participation in Scientific Events}
 %\newcommand{\event}[4]{\item [#2] \textit{#1}\\ {\footnotesize#3}\\#4}
 \newcommand{\event}[4]{%
-    \item [#2] \textit{#1}\\%
+\item [#2] \begin{minipage}[t]{\linewidth} \textit{#1}\\%
         {\footnotesize#3}%
         \ifx&#4&
         % % No final line break if #4 is empty
         \else%
         \\#4%
     \fi%
+    \end{minipage}
 }
 
 \begin{labeling}{2023--}
+    \event{Conference on Neural Information Processing Systems (NeurIPS)}{2024}{Vancouver, Canada}{Poster presentation}
     \event{ELLIIT Focus Period Symposium: Machine Learning for Climate Science}{2024}{Linköping, Sweden}{Poster presentation}
     \event{Large-Scale Deep Learning for the Earth System Workshop}{2024}{Bonn, Germany}{Oral presentation}
     \event{International Conference on Machine Learning (ICML)\\Machine Learning for Earth System Modeling Workshop at ICML 2024}{2024}{Vienna, Austria}{Workshop poster presentation}
