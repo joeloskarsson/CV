@@ -1,15 +1,38 @@
+\newcommand{\cvname}{Joel Oskarsson}
+\newcommand{\email}{joel.oskarsson@outlook.com}
+\newcommand{\phone}{+41\,77\,289\,1572}
+\newcommand{\website}{joeloskarsson.github.io}
+\newcommand{\linkedin}{linkedin.com/in/joel-oskarsson}
+\newcommand{\affiliation}{ETH Zurich AI Center, Zurich, Switzerland}
+
+\newcommand{\emaillink}{\href{mailto:\email}{\email}}
+\newcommand{\websitelink}{\href{http://\website}{\website}}
+\newcommand{\linkedinlink}{\href{http://\linkedin}{\linkedin}}
+\newcommand{\contactsep}{\enspace$\cdot$\enspace}
+
+\ifheadshot
 \begin{figure*}
     \begin{subfigure}[]{0.3\textwidth}
         \includegraphics[height=5cm]{photo}
     \end{subfigure}%
     ~
     \begin{subfigure}[]{0.5\textwidth}
-        \part*{Joel Oskarsson}
+        \part*{\cvname}
 
-        \begin{tabular}{l l}
-            \href{mailto:\email}{\email} & +41772891572\\
-            \href{http://joeloskarsson.github.io}{joeloskarsson.github.io} & \href{http://linkedin.com/in/joel-oskarsson}{linkedin.com/in/joel-oskarsson}\\
+        \affiliation
+
+        \begin{tabular}{@{}l l@{}}
+            \emaillink & \phone\\
+            \websitelink & \linkedinlink\\
         \end{tabular}
 
      \end{subfigure}%
 \end{figure*}
+\else
+\begin{center}
+    {\huge\bfseries \cvname}\\[6pt]
+    {\affiliation}\\[8pt]
+    \emaillink \contactsep \phone\\[2pt]
+    \websitelink \contactsep \linkedinlink
+\end{center}
+\fi

@@ -1,5 +1,13 @@
 \documentclass[12pt]{article}
 
+% ===== Switches =====
+% Include photo in header
+\newif\ifheadshot
+\headshottrue
+% Only include a publication summary, for when a separate publication list is used
+\newif\ifseparatepublist
+%\separatepublisttrue
+
 % Packages
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
@@ -17,11 +25,8 @@
 
 % Change how each biblatex bib heading is printed
 \defbibheading{bibliography}[\refname]{%
-  \subsubsection*{\normalfont\textit{#1}}%
+  \subsection*{#1}%
 }
-
-% No translations, only English
-\newcommand{\email}{joel.oskarsson@outlook.com}
 
 % Footnotes as symbols
 \renewcommand*{\thefootnote}{\fnsymbol{footnote}}
@@ -29,8 +34,12 @@
 % Title format
 \titleformat{\section}
   {\normalfont\large\bfseries}{\thesection}{1em}{}
+\titlespacing*{\section}{0pt}{18pt}{4pt}
 \titleformat{\subsection}
-  {\normalfont\normalsize\itshape}{\thesubsection}{1em}{}
+  {\normalfont\normalsize\bfseries\itshape}{\thesubsection}{1em}{}
+\titlespacing*{\subsection}{0pt}{6pt}{2pt}
+
+\setlist[itemize]{topsep=0pt}
 
 \newcommand{\inputsection}[1]{\input{tex/sections/#1}}
 
@@ -42,17 +51,22 @@
 
 \inputsection{header}
 \inputsection{research_interests}
-\inputsection{employment}
-\inputsection{education}
-\inputsection{research_visits}
-\inputsection{publications}
-\inputsection{presentations}
-\inputsection{event_participation}
+%\inputsection{employment}
+%\inputsection{education}
+\inputsection{positions}
+\ifseparatepublist
+    \inputsection{publication_summary}
+\else
+    \inputsection{publications}
+\fi
 \inputsection{grants}
+\inputsection{presentations}
+\inputsection{research_visits}
 \inputsection{activities}
 \inputsection{reviewing}
-\inputsection{media}
 \inputsection{outreach}
+\inputsection{media}
+\inputsection{event_participation}
 \inputsection{skills}
 \inputsection{references}
 
